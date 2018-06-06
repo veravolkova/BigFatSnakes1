@@ -1,14 +1,10 @@
-def display_board(board):      
-
-    
-    print(' - - - - - - - - - -')   
-    print(' |  ' + board[1] +'  |  ' + board[2] + '  |  ' + board[3] + '  |')
-    print(' - - - - - - - - - -')  
-    print(' |  ' + board[4] +'  |  ' + board[5] + '  |  ' + board[6] + '  |')  
-    print(' - - - - - - - - - -')
-    print(' |  ' + board[7] +'  |  ' + board[8] + '  |  ' + board[9] + '  |')   
-    print(' - - - - - - - - - -')
+def display_board(board):   
+   
+    s = ' -' *10
+    for item in range(1,8,3):        
+        print(s + '\n |  ' + board[item] +'  |  ' + board[item+1] + '  |  ' + board[item+2] + '  |')       
+    print(s)
 
 #test
-#test_board = ['#','X','O','X','O','X','O','X','O','X']
+#test_board = ['0','1','2','3','4','5','6','7','8','9']
 #display_board(test_board)
