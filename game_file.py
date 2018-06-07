@@ -16,5 +16,12 @@ or (board[2] == mark and board[4] == mark and board[6]== mark))
 
     print('You won!')
   
-  
-  #5 Still thinking...
+  #5 
+
+def who_first():
+    
+    if randint(0,1) == 0:
+        
+        return 'Player 1 goes first!'
+    else:
+        return 'Player 2 goes first!'
