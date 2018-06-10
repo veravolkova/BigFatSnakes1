@@ -1,3 +1,23 @@
+jolene8,9
+#8
+def player_choice(board):
+
+    #Use While Loop: the next position is repeatedly tested until the condition is met. 
+   
+    position = 0
+    
+    while position not in [1,2,3,4,5,6,7,8,9] or not space_check(board, position):
+        position = int(input('Your next position is (from 1-9): '))
+        
+    return position
+    
+    pass
+  
+ #9
+ def replay():
+    return input('Try again? Y or N: ').startswith('y')
+    pass
+
 TiinaBranch
 # I do not know why this code does not work. Does someone have any ideas?
 #It prints out the input question, but even user input is X the loop continues running. This in Jupyter.
@@ -65,5 +85,6 @@ def player_choice(board):
 TiinaBranch
 
 
+test
 test
 test
