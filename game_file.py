@@ -1,3 +1,4 @@
+era_print_board_1
 
 def display_board(board):   
    
@@ -9,6 +10,46 @@ def display_board(board):
 #test
 #test_board = ['0','1','2','3','4','5','6','7','8','9']
 #display_board(test_board)
+=======
+jolene8,9
+#8
+def player_choice(board):
+
+    #Use While Loop: the next position is repeatedly tested until the condition is met. 
+   
+    position = 0
+    
+    while position not in [1,2,3,4,5,6,7,8,9] or not space_check(board, position):
+        position = int(input('Your next position is (from 1-9): '))
+        
+    return position
+    
+    pass
+  
+ #9
+ def replay():
+    return input('Try again? Y or N: ').startswith('y')
+    pass
+
+TiinaBranch
+# I do not know why this code does not work. Does someone have any ideas?
+#It prints out the input question, but even user input is X the loop continues running. This in Jupyter.
+#Step 2:
+def player_input():
+    a = 'd'
+
+    while a != "O"or a != "X":
+        a = input("What are you:")
+    if a == "O"or a== "X":
+        print("You have selected:" + a)      
+#Step 3:
+#I could not make this work either. I am not sure how to define the board that is made by the display_board function. Otherwise I think 
+#marker needs to be same as the position. After the marker is in right position updated display board would be printed out.
+
+def place_marker(board,marker,position):
+    board[position] = marker
+    display_board()
+test
 
 Maris_section
 #write your code here
@@ -38,6 +79,7 @@ def who_first():
         return 'Player 1 goes first!'
     else:
         return 'Player 2 goes first!'
+test
 
 ## Step 6: Write a function that returns a boolean indicating whether a space on the board is freely available.
 ## new
@@ -54,5 +96,10 @@ def player_choice(board):
         if cell == ' ':
             return False
     return True
+TiinaBranch
+
+
+test
+test
 test
 
