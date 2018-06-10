@@ -1,16 +1,3 @@
-
-def display_board(board):   
-   
-    s = ' -' *10
-    for item in range(1,8,3):        
-        print(s + '\n |  ' + board[item] +'  |  ' + board[item+1] + '  |  ' + board[item+2] + '  |')       
-    print(s)
-
-#test
-#test_board = ['0','1','2','3','4','5','6','7','8','9']
-#display_board(test_board)
-
-Maris_section
 #write your code here
 #create board
 
@@ -38,21 +25,3 @@ def who_first():
         return 'Player 1 goes first!'
     else:
         return 'Player 2 goes first!'
-
-## Step 6: Write a function that returns a boolean indicating whether a space on the board is freely available.
-## new
-def is_space_check(board, position):
-    if board[position] == ' ':
-        return True
-    else:
-        return False
-
-##Step 7: Write a function that checks if the board is full and returns a boolean value. True if full, False otherwise.
-
-def player_choice(board):
-    for cell in board:
-        if cell == ' ':
-            return False
-    return True
-test
-
