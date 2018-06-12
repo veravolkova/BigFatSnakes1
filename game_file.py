@@ -13,7 +13,10 @@ import random
 # Vera's
 # Feel free to test it in your own
 def display_board(board):   
-   
+
+# Andrei's comment: to clear the board
+    print('\n'*100)
+
     s = ' -' *10
     for item in range(1,8,3):        
         print(s + '\n |  ' + board[item] +'  |  ' + board[item+1] + '  |  ' + board[item+2] + '  |')       
